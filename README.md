@@ -9,3 +9,8 @@ var handleRequest = function(request, response) {
 }
 var www = http.createServer(handleRequest);
 www.listen(8080);
+
+
+
+Then
+Use the built-in Web preview feature of Cloud Shell to open a new browser tab and proxy a request to the instance you just started on port 8080.
