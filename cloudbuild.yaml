@@ -1,0 +1,6 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/qwiklabs-gcp-04-1fd676be99c6/myimageissuper:$COMMIT_SHA', '.']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/qwiklabs-gcp-04-1fd676be99c6/myimageissuper:$COMMIT_SHA']
+images: ['gcr.io/qwiklabs-gcp-04-1fd676be99c6/myimageissuper:$COMMIT_SHA']
